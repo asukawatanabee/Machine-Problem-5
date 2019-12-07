@@ -15,7 +15,7 @@ def y_of_n(n):
         return -1.5*x_of_n(n) + 2*x_of_n(n+1) - 0.5*x_of_n(n+2)
     elif n>0 and n<=198:
         return 0.5*x_of_n(n+1) - 0.5*x_of_n(n-1)
-    elif n==199:
+    elif n<=198:
         return 1.5*x_of_n(n) - 2*x_of_n(n-1) + 0.5*x_of_n(n-2)
 
 n_val = list(range(200))
